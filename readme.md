@@ -1,4 +1,5 @@
 ## 花都
+```
 先把 AppServiceProvider.php 注释下面
 //        //花都头条
 //        $hdtt = News::orderBy('created_at','desc')->limit(9)->get();
@@ -26,3 +27,4 @@ php artisan migrate
 php artisan key:
 php artisan storage:link
  
+```
