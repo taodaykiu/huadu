@@ -121,7 +121,7 @@
       <change beforePath="$PROJECT_DIR$/../gtsl/src/shop/pages/ptsuccess.wpy" beforeDir="false" afterPath="$PROJECT_DIR$/../gtsl/src/shop/pages/ptsuccess.wpy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gtsl/src/shop/pages/success.wpy" beforeDir="false" afterPath="$PROJECT_DIR$/../gtsl/src/shop/pages/success.wpy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gtsl/src/utils/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/../gtsl/src/utils/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Admin/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin/Controllers/HomeController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -144,8 +144,8 @@
         <counts>
           <entry key="html" value="15" />
           <entry key="md" value="3" />
-          <entry key="php" value="82" />
-          <entry key="wpy" value="1" />
+          <entry key="php" value="84" />
+          <entry key="wpy" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -153,21 +153,23 @@
           <entry key="Blade" value="51" />
           <entry key="HTML" value="15" />
           <entry key="Markdown" value="3" />
-          <entry key="PHP" value="31" />
-          <entry key="Vue.js" value="1" />
+          <entry key="PHP" value="33" />
+          <entry key="Vue.js" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="1" />
-          <entry key="php" value="3384" />
+          <entry key="php" value="3424" />
+          <entry key="wpy" value="198" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Blade" value="2237" />
           <entry key="HTML" value="2" />
-          <entry key="PHP" value="1146" />
+          <entry key="PHP" value="1186" />
+          <entry key="Vue.js" value="198" />
         </counts>
       </usages-collector>
     </session>
@@ -175,28 +177,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/SysController.php">
+        <entry file="file://$PROJECT_DIR$/../gtsl/src/swh/order/list.wpy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="133" column="24" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/home/common.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="200" column="25" lean-forward="true" selection-start-line="200" selection-start-column="25" selection-end-line="200" selection-end-column="25" />
+            <state relative-caret-position="338">
+              <caret line="155" column="26" lean-forward="true" selection-start-line="155" selection-start-column="26" selection-end-line="155" selection-end-column="26" />
+              <folding>
+                <element signature="n#repeat#0;n#view#0;n#template#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+        <entry file="file://$PROJECT_DIR$/../gtsl/src/shop/pages/order/yyorder.wpy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+            <state relative-caret-position="422">
+              <caret line="82" column="29" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -257,14 +253,11 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../gtsl" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/home/product/wenjiangui.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/wap/product/wenjiangui.blade.php" />
-        <option value="$USER_HOME$/Downloads/Mob/mijijia.html" />
         <option value="$PROJECT_DIR$/resources/views/home/product/mijijia.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/wap/product/mijijia.blade.php" />
         <option value="$USER_HOME$/Downloads/Mob/baoxiangui.html" />
@@ -313,6 +306,9 @@
         <option value="$PROJECT_DIR$/app/Admin/Controllers/SysController.php" />
         <option value="$PROJECT_DIR$/resources/views/home/common.blade.php" />
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
+        <option value="$PROJECT_DIR$/app/Admin/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/../gtsl/src/swh/order/list.wpy" />
+        <option value="$PROJECT_DIR$/../gtsl/src/shop/pages/order/yyorder.wpy" />
       </list>
     </option>
   </component>
@@ -433,7 +429,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="83" />
+    <option name="x" value="556" />
     <option name="y" value="23" />
     <option name="width" value="1698" />
     <option name="height" value="988" />
@@ -449,43 +445,33 @@
           <expand>
             <path>
               <item name="huadu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huadu" type="462c0819:PsiDirectoryNode" />
+              <item name="gtsl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="huadu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huadu" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="gtsl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="huadu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huadu" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Providers" type="462c0819:PsiDirectoryNode" />
+              <item name="gtsl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="huadu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huadu" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="gtsl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="huadu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huadu" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huadu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huadu" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huadu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huadu" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="wap" type="462c0819:PsiDirectoryNode" />
+              <item name="gtsl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -543,18 +529,18 @@
       <workItem from="1550831566441" duration="1722000" />
       <workItem from="1550887167681" duration="39224000" />
       <workItem from="1550995698216" duration="27169000" />
-      <workItem from="1551054045953" duration="16932000" />
+      <workItem from="1551054045953" duration="17899000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91966000" />
+    <option name="totallyTimeSpent" value="92933000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="83" y="23" width="1698" height="988" extended-state="0" />
+    <frame x="556" y="23" width="1698" height="988" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3182367" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1781401" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -605,40 +591,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/Mob/gengyigui.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="441" />
-          <folding>
-            <element signature="n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/wap/product/dianzibaomigui.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="88" column="102" selection-start-line="88" selection-start-column="102" selection-end-line="88" selection-end-column="102" />
-          <folding>
-            <element signature="e#1894#1921#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home/product/gengyigui.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="737">
-          <caret line="174" column="31" lean-forward="true" selection-start-line="136" selection-start-column="13" selection-end-line="174" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/wap/product/gengyigui.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="105" column="88" selection-start-line="105" selection-start-column="88" selection-end-line="105" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../diancan/src/pages/restaurant.wpy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2174" />
@@ -1105,10 +1057,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/SysController.php">
+    <entry file="file://$PROJECT_DIR$/config/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="133" column="24" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="24" />
+        <state relative-caret-position="368">
+          <caret line="50" column="27" lean-forward="true" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1119,10 +1085,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+    <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/SysController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        <state relative-caret-position="492">
+          <caret line="133" column="24" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gtsl/src/swh/order/list.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="155" column="26" lean-forward="true" selection-start-line="155" selection-start-column="26" selection-end-line="155" selection-end-column="26" />
+          <folding>
+            <element signature="n#repeat#0;n#view#0;n#template#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gtsl/src/shop/pages/order/yyorder.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="82" column="29" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
         </state>
       </provider>
     </entry>
