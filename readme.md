@@ -27,4 +27,5 @@ php artisan migrate
 php artisan key:
 php artisan storage:link
  
+解开注释 导入数据库
 ```
