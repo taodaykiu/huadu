@@ -20,7 +20,7 @@ class CaseController extends Controller
     public function index(Request $request)
     {
         //顶部案例
-        $top = Cases::OrderBy('created_at','desc')->limit(6)->get();
+        $top = Cases::OrderBy('created_at','desc')->limit(5)->get();
 
         //分类
         $cate1 = CaseCate::whereType(0)->get();
