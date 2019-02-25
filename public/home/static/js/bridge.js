@@ -277,7 +277,7 @@ jQuery(document).ready(function ($) {
             $('a').each(function (index, element) {
                 if ($(this).attr('href') && $(this).attr('href').indexOf('p.qiao.baidu.com') >= 0 || $(this).hasClass('sq-call')) {
                     //打开腾讯
-                    $(this).attr("href", "tencent://Message/?Uin={{ $sys->qq }}&websiteName=洛阳花都家具集团=&Menu=yes");
+                    $(this).attr("href", "tencent://Message/?Uin=2633216175&websiteName=洛阳花都家具集团=&Menu=yes");
                 }
             });
             return;
@@ -362,7 +362,7 @@ jQuery(document).ready(function ($) {
 
             e.preventDefault();
 
-            window.open("tencent://Message/?Uin={{ $sys->qq }}&websiteName=洛阳花都家具集团=&Menu=yes")
+            window.open("tencent://Message/?Uin=2633216175&websiteName=洛阳花都家具集团=&Menu=yes")
 
         });
 

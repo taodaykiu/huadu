@@ -86,9 +86,21 @@ class HomeController extends Controller
         }
         return view('home.index.zsjm');
     }
+
+
+    public function wenjianguidingzhi()
+    {
+
+        return view('home.index.wenjianguidingzhi');
+    }
     public function zhaopin()
     {
         $page = AboutPage::whereType(3)->first();
+
+        if (Agent::isMobile()) {
+            return view('wap.index.zhaopin',compact('page'));
+
+        }
         return view('home.index.zhaopin',compact('page'));
     }
 

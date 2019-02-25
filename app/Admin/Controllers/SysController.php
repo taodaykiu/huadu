@@ -130,6 +130,7 @@ class SysController extends Controller
         $form = new Form(new Sys);
 
         $form->image('logo', 'Logo')->uniqueName();
+        $form->image('code', '二维码')->uniqueName();
         $form->text('title', '网站标题');
         $form->text('url', '网站网址');
         $form->text('keywords', '关键字');
