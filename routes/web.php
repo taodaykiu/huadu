@@ -43,6 +43,7 @@ Route::get('/news/industry', 'NewsController@industry');
 Route::get('/news/question', 'NewsController@question');
 Route::get('/news/{id}', 'NewsController@data');
 Route::get('/about', 'HomeController@about');
+Route::get('/wenjianguidingzhi', 'HomeController@wenjianguidingzhi');
 Route::get('/contact', 'HomeController@contacts');
 Route::get('/ggdz', 'GgdzController@index');
 Route::get('/zsjm', 'HomeController@zsjm');

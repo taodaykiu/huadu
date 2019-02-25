@@ -130,6 +130,7 @@ class SysController extends Controller
         $form = new Form(new Sys);
 
         $form->image('logo', 'Logo')->uniqueName();
+        $form->image('code', '二维码')->uniqueName();
         $form->text('title', '网站标题');
         $form->text('url', '网站网址');
         $form->text('keywords', '关键字');
@@ -141,6 +142,7 @@ class SysController extends Controller
         $form->text('bah', '备案号');
         $form->text('dtlj', '百度商桥动态链接');
         $form->text('address', '公司地址');
+        $form->text('about', '关于花都');
 
         return $form;
     }

@@ -9,7 +9,7 @@
                 </div>
                 <div class="right" style="width:40%; padding:10px 20px">
                     <div class="qrcode">
-                        <img style="width:100%;" src="/wap/static/images/ewm22.jpg"/>
+                        <img style="width:100%;" src="/uploads/{{ $sys->code }}"/>
                     </div>
                 </div>
             </div>
@@ -28,6 +28,7 @@
             </ul>
             <ul class="flex" style="justify-content:center; padding-top:10px;">
                 <li><a href="/zsjm">代理合作</a></li>
+                <li><a href="/zhaopin">人才招聘</a></li>
             </ul>
         </div>
         <div class="mdl-cell mdl-cell--12-col r3">

@@ -13,9 +13,9 @@ class HomeController extends Controller
     public function index(Content $content)
     {
         return $content
-            ->header('Dashboard')
-            ->description('Description...')
-            ->row(Dashboard::title())
+            ->header('.')
+            ->description('..')
+            ->row('<h1>花都后台管理</h1>')
             ->row(function (Row $row) {
 
 

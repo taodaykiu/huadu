@@ -447,7 +447,7 @@
                     </div>
                     <div class="desc">
                         <h3>走进花都<br/><span>About Huadu</span></h3>
-                        <p>洛阳花都家具集团有限公司创建于1992年，注册资金1.006亿，是20余年的创业大品牌，致力于现代化钢制家具的生产与销售。数十年来，经过无数用户对产品的检验与认可，洛阳花都已成为钢制办公家具行业里的口碑名牌！先后荣获“河南名牌产品”、“河南省国际知名名牌”、“河南省著名商标”、“河南省百强企业” 等荣誉称号。企业率先通过了ISO9001/ISO14001和OSHAS18001认证及国际3C认证，十环认证和出口欧盟CE认证。销售额、纳税额、出口额三项指标连续多年位居同行业。</p>
+                        <p>{{ $sys->about }}</p>
                         <div class="align-center">
                             <a href="/about" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
                                 了解花都

@@ -121,7 +121,7 @@
       <change beforePath="$PROJECT_DIR$/../gtsl/src/shop/pages/ptsuccess.wpy" beforeDir="false" afterPath="$PROJECT_DIR$/../gtsl/src/shop/pages/ptsuccess.wpy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gtsl/src/shop/pages/success.wpy" beforeDir="false" afterPath="$PROJECT_DIR$/../gtsl/src/shop/pages/success.wpy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gtsl/src/utils/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/../gtsl/src/utils/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CaseController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -142,32 +142,38 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="15" />
+          <entry key="css" value="2" />
+          <entry key="html" value="17" />
+          <entry key="js" value="1" />
           <entry key="md" value="3" />
-          <entry key="php" value="82" />
-          <entry key="wpy" value="1" />
+          <entry key="php" value="106" />
+          <entry key="wpy" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Blade" value="51" />
-          <entry key="HTML" value="15" />
+          <entry key="Blade" value="64" />
+          <entry key="CSS" value="2" />
+          <entry key="HTML" value="17" />
+          <entry key="JavaScript" value="1" />
           <entry key="Markdown" value="3" />
-          <entry key="PHP" value="31" />
-          <entry key="Vue.js" value="1" />
+          <entry key="PHP" value="42" />
+          <entry key="Vue.js" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="1" />
-          <entry key="php" value="3384" />
+          <entry key="html" value="2" />
+          <entry key="php" value="3709" />
+          <entry key="wpy" value="198" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Blade" value="2237" />
-          <entry key="HTML" value="2" />
-          <entry key="PHP" value="1146" />
+          <entry key="Blade" value="2470" />
+          <entry key="HTML" value="3" />
+          <entry key="PHP" value="1238" />
+          <entry key="Vue.js" value="198" />
         </counts>
       </usages-collector>
     </session>
@@ -177,26 +183,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/SysController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="133" column="24" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="24" />
+            <state relative-caret-position="645">
+              <caret line="144" column="26" selection-start-line="144" selection-start-column="21" selection-end-line="144" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/home/common.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/wap/index/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="200" column="25" lean-forward="true" selection-start-line="200" selection-start-column="25" selection-end-line="200" selection-end-column="25" />
+            <state relative-caret-position="377">
+              <caret line="450" column="50" lean-forward="true" selection-start-line="450" selection-start-column="50" selection-end-line="450" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CaseController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+            <state relative-caret-position="221">
+              <caret line="22" column="59" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -205,10 +211,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>home/static/images/1 (11).jpg</find>
-      <find>工业货架系列</find>
-      <find>Case</find>
-      <find>400-6668-369</find>
       <find>2633216175</find>
       <find>4006668369</find>
       <find>{{ $sys-&gt;qq }}</find>
@@ -231,10 +233,14 @@
       <find>cat-nav-wrap</find>
       <find>&lt;form</find>
       <find>ggdz</find>
-      <find>&quot;static</find>
       <find>zsjm</find>
       <find>&quot;image</find>
       <find>b36323604bdf4caf8675df44184939ca.png</find>
+      <find>部分定制产品展示</find>
+      <find>/wap/static/images/ewm22.jpg</find>
+      <find>ewm.</find>
+      <find>zhaopin</find>
+      <find>&quot;static</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;home/static</replace>
@@ -243,8 +249,9 @@
       <replace>'/home/static</replace>
       <replace>{{ $sys-&gt;tel }}</replace>
       <replace>{{ $sys-&gt;qq }}</replace>
-      <replace>&quot;/home/static</replace>
       <replace />
+      <replace>/uploads/{{ $sys-&gt;code }}</replace>
+      <replace>&quot;/home/static</replace>
       <replace>&quot;/wap/static</replace>
     </replaceStrings>
     <dirStrings>
@@ -262,27 +269,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/home/product/wenjiangui.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/wap/product/wenjiangui.blade.php" />
-        <option value="$USER_HOME$/Downloads/Mob/mijijia.html" />
-        <option value="$PROJECT_DIR$/resources/views/home/product/mijijia.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/wap/product/mijijia.blade.php" />
-        <option value="$USER_HOME$/Downloads/Mob/baoxiangui.html" />
-        <option value="$PROJECT_DIR$/resources/views/wap/product/baoxiangui.blade.php" />
-        <option value="$USER_HOME$/Downloads/Mob/tushuguanjiaju.html" />
-        <option value="$PROJECT_DIR$/resources/views/wap/product/tushuguanjiaju.blade.php" />
         <option value="$USER_HOME$/Downloads/Mob/huojia.html" />
         <option value="$PROJECT_DIR$/resources/views/wap/product/huojia.blade.php" />
         <option value="$USER_HOME$/Downloads/Mob/dianzibaomigui.html" />
         <option value="$PROJECT_DIR$/resources/views/wap/product/dianzibaomigui.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/wap/product/gengyigui.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/wap/index/index.blade.php" />
         <option value="$USER_HOME$/Downloads/Mob/ganggui.html" />
         <option value="$PROJECT_DIR$/resources/views/home/product/index.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/wap/product/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" />
-        <option value="$PROJECT_DIR$/resources/views/wap/product/data.blade.php" />
         <option value="$PROJECT_DIR$/app/Admin/Controllers/ProductCateController.php" />
         <option value="$PROJECT_DIR$/app/Admin/Controllers/ProductController.php" />
         <option value="$PROJECT_DIR$/app/Admin/Controllers/ZhuantiController.php" />
@@ -291,7 +286,6 @@
         <option value="$PROJECT_DIR$/app/Admin/Controllers/NewsController.php" />
         <option value="$USER_HOME$/Downloads/Mob/case.html" />
         <option value="$PROJECT_DIR$/resources/views/wap/case/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/CaseController.php" />
         <option value="$USER_HOME$/Downloads/Mob/caseDetail.html" />
         <option value="$PROJECT_DIR$/resources/views/wap/common.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/wap/case/data.blade.php" />
@@ -305,14 +299,27 @@
         <option value="$USER_HOME$/Downloads/Mob/ggdz.html" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/GgdzController.php" />
         <option value="$PROJECT_DIR$/resources/views/wap/ggdz/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$USER_HOME$/Downloads/Mob/zsjm.html" />
         <option value="$PROJECT_DIR$/resources/views/wap/index/zsjm.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/wap/right.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_25_152122_add_url.php" />
-        <option value="$PROJECT_DIR$/app/Admin/Controllers/SysController.php" />
-        <option value="$PROJECT_DIR$/resources/views/home/common.blade.php" />
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
+        <option value="$PROJECT_DIR$/app/Admin/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/../gtsl/src/swh/order/list.wpy" />
+        <option value="$PROJECT_DIR$/../gtsl/src/shop/pages/order/yyorder.wpy" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$USER_HOME$/Downloads/PC/wenjianguidingzhi.html" />
+        <option value="$PROJECT_DIR$/resources/views/home/index/wenjianguidingzhi.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/resources/views/wap/index/zhaopin.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_25_163006_add_code.php" />
+        <option value="$PROJECT_DIR$/resources/views/wap/right.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/home/common.blade.php" />
+        <option value="$USER_HOME$/Downloads/MOB 2/productDetail.html" />
+        <option value="$PROJECT_DIR$/resources/views/wap/product/data.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_25_170304_add_about.php" />
+        <option value="$PROJECT_DIR$/app/Admin/Controllers/SysController.php" />
+        <option value="$PROJECT_DIR$/resources/views/wap/index/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/CaseController.php" />
       </list>
     </option>
   </component>
@@ -433,7 +440,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="83" />
+    <option name="x" value="137" />
     <option name="y" value="23" />
     <option name="width" value="1698" />
     <option name="height" value="988" />
@@ -460,32 +467,14 @@
               <item name="huadu" type="b2602c69:ProjectViewProjectNode" />
               <item name="huadu" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Providers" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="huadu" type="b2602c69:ProjectViewProjectNode" />
               <item name="huadu" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huadu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huadu" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huadu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huadu" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huadu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huadu" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="wap" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -495,6 +484,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="HomeController&#9;FILE&#9;file:///Users/mac12.12.6/Code/huadu/app/Http/Controllers/HomeController.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -503,12 +493,15 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/home/static/css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/wap/static" />
+      <recent name="$PROJECT_DIR$/public/home/static/images" />
+      <recent name="$PROJECT_DIR$/public/home/static" />
+      <recent name="$PROJECT_DIR$/public/home" />
       <recent name="D:\laragon\www\huadu\public\wap" />
-      <recent name="D:\laragon\www\huadu\resources\views" />
-      <recent name="D:\laragon\www\huadu\resources\views\home\index" />
-      <recent name="D:\laragon\www\huadu\resources\views\home\product" />
-      <recent name="D:\laragon\www\huadu\public\home" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -543,18 +536,18 @@
       <workItem from="1550831566441" duration="1722000" />
       <workItem from="1550887167681" duration="39224000" />
       <workItem from="1550995698216" duration="27169000" />
-      <workItem from="1551054045953" duration="16932000" />
+      <workItem from="1551054045953" duration="21544000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91966000" />
+    <option name="totallyTimeSpent" value="96578000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="83" y="23" width="1698" height="988" extended-state="0" />
+    <frame x="137" y="23" width="1698" height="988" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3182367" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1781401" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -605,141 +598,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/Mob/gengyigui.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="441" />
-          <folding>
-            <element signature="n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/wap/product/dianzibaomigui.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="88" column="102" selection-start-line="88" selection-start-column="102" selection-end-line="88" selection-end-column="102" />
-          <folding>
-            <element signature="e#1894#1921#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home/product/gengyigui.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="737">
-          <caret line="174" column="31" lean-forward="true" selection-start-line="136" selection-start-column="13" selection-end-line="174" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/wap/product/gengyigui.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="105" column="88" selection-start-line="105" selection-start-column="88" selection-end-line="105" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../diancan/src/pages/restaurant.wpy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2174" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Mob/ganggui.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="154" column="34" lean-forward="true" selection-end-line="1090" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home/product/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="425" column="96" selection-start-line="425" selection-start-column="89" selection-end-line="425" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/wap/product/data.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="38" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="33" column="73" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/wap/product/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="235" column="39" selection-start-line="235" selection-start-column="39" selection-end-line="235" selection-end-column="39" />
-          <folding>
-            <element signature="n#style#0;n#li#7;n#ul#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#10;n#ul#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/NewsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="151" column="13" selection-start-line="151" selection-start-column="13" selection-end-line="151" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/CaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="102" column="7" lean-forward="true" selection-start-line="102" selection-start-column="7" selection-end-line="111" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/CaseCateController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="107" column="10" lean-forward="true" selection-start-line="107" selection-start-column="10" selection-end-line="111" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/ZhuantiController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="102" column="7" selection-start-line="102" selection-start-column="7" selection-end-line="115" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/ProductController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="111" column="36" selection-start-line="111" selection-start-column="36" selection-end-line="111" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/ProductCateController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="113" column="11" lean-forward="true" selection-start-line="113" selection-start-column="11" selection-end-line="116" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Mob/case.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="11" column="61" selection-end-line="593" />
-          <folding>
-            <element signature="n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/home/case/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -766,13 +624,6 @@
           <folding>
             <element signature="n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -834,24 +685,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/wap/news/data.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="81" column="27" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/NewsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="662">
           <caret line="57" column="6" selection-start-line="57" selection-start-column="6" selection-end-line="60" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/wap/index/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1098">
-          <caret line="426" column="56" selection-end-line="479" />
         </state>
       </provider>
     </entry>
@@ -1015,65 +852,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/wap/index/zsjm.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="87" column="42" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
-          <folding>
-            <element signature="e#1494#1519#0#HTML" expanded="true" />
-            <element signature="e#1961#1967#1#HTML" expanded="true" />
-            <element signature="e#2103#2109#0#HTML" expanded="true" />
-            <element signature="e#2109#2115#0#HTML" expanded="true" />
-            <element signature="e#2185#2191#0#HTML" expanded="true" />
-            <element signature="e#2259#2265#1#HTML" expanded="true" />
-            <element signature="e#2426#2432#1#HTML" expanded="true" />
-            <element signature="e#2579#2585#1#HTML" expanded="true" />
-            <element signature="e#2658#2683#0#HTML" expanded="true" />
-            <element signature="e#3082#3088#1#HTML" expanded="true" />
-            <element signature="e#3224#3230#0#HTML" expanded="true" />
-            <element signature="e#3230#3236#0#HTML" expanded="true" />
-            <element signature="e#3306#3312#0#HTML" expanded="true" />
-            <element signature="e#3380#3386#1#HTML" expanded="true" />
-            <element signature="e#3547#3553#1#HTML" expanded="true" />
-            <element signature="e#3700#3706#1#HTML" expanded="true" />
-            <element signature="e#3779#3804#0#HTML" expanded="true" />
-            <element signature="e#4203#4209#1#HTML" expanded="true" />
-            <element signature="e#4345#4351#0#HTML" expanded="true" />
-            <element signature="e#4351#4357#0#HTML" expanded="true" />
-            <element signature="e#4427#4433#0#HTML" expanded="true" />
-            <element signature="e#4501#4507#1#HTML" expanded="true" />
-            <element signature="e#4668#4674#1#HTML" expanded="true" />
-            <element signature="e#4821#4827#1#HTML" expanded="true" />
-            <element signature="e#4900#4925#0#HTML" expanded="true" />
-            <element signature="e#5446#5452#1#HTML" expanded="true" />
-            <element signature="e#5588#5594#0#HTML" expanded="true" />
-            <element signature="e#5594#5600#0#HTML" expanded="true" />
-            <element signature="e#5670#5676#0#HTML" expanded="true" />
-            <element signature="e#5744#5750#1#HTML" expanded="true" />
-            <element signature="e#5911#5917#1#HTML" expanded="true" />
-            <element signature="e#6064#6070#1#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/wap/right.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/wap/common.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="83" column="28" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1088,13 +870,6 @@
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_25_152009_add_url.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_25_152122_add_url.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Yqlj.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1105,17 +880,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/SysController.php">
+    <entry file="file://$PROJECT_DIR$/config/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="133" column="24" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="24" />
+        <state relative-caret-position="368">
+          <caret line="50" column="27" lean-forward="true" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home/common.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="200" column="25" lean-forward="true" selection-start-line="200" selection-start-column="25" selection-end-line="200" selection-end-column="25" />
+        <state relative-caret-position="204">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1123,6 +898,179 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gtsl/src/swh/order/list.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="155" column="26" selection-start-line="155" selection-start-column="26" selection-end-line="155" selection-end-column="26" />
+          <folding>
+            <element signature="n#repeat#0;n#view#0;n#template#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/home/static/js/api.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gtsl/src/shop/pages/order/yyorder.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="76" column="8" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="45" column="48" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/PC/wenjianguidingzhi.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" selection-start-line="18" selection-end-line="36" selection-end-column="77" />
+          <folding>
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/home/static/css/module.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home/index/wenjianguidaijiagong.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home/index/wenjianguidingzhi.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="95" column="63" selection-start-line="95" selection-start-column="63" selection-end-line="95" selection-end-column="63" />
+          <folding>
+            <element signature="e#1506#1547#0#HTML" expanded="true" />
+            <element signature="e#12027#12073#0#HTML" expanded="true" />
+            <element signature="e#15374#15433#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home/common.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="234" column="36" lean-forward="true" selection-start-line="234" selection-start-column="36" selection-end-line="234" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/wap/right.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/wap/news/data.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_25_152122_add_url.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/wap/index/zhaopin.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/wap/index/zsjm.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="674">
+          <caret line="87" column="42" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="622">
+          <caret line="100" column="59" selection-start-line="100" selection-start-column="59" selection-end-line="100" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/wap/static/css/mobile.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/MOB 2/productDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="40" column="25" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="25" />
+          <folding>
+            <element signature="n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_25_170304_add_about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_25_163006_add_code.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="79" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home/product/data.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="43" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/wap/product/data.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="81" column="43" selection-start-line="81" selection-start-column="43" selection-end-line="81" selection-end-column="43" />
+          <folding>
+            <element signature="e#1273#1294#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/SysController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="144" column="26" selection-start-line="144" selection-start-column="21" selection-end-line="144" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/wap/index/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="450" column="50" lean-forward="true" selection-start-line="450" selection-start-column="50" selection-end-line="450" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="59" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
         </state>
       </provider>
     </entry>

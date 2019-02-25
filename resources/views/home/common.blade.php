@@ -228,7 +228,7 @@
                             <span>
                                 <i class="fa fa-weixin" aria-hidden="true"></i>
                             </span>
-                            <span class="wx-qrcode"><img src="/home/static/images/ewm22.jpg"/></span>
+                            <span class="wx-qrcode"><img src="/uploads/{{ $sys->code }}"/></span>
                         </a>
                     </div>
                 </div>
@@ -236,7 +236,7 @@
                     <ul class="clearfix">
                         <li><a class="first">产品中心</a> <a href="/wenjiangui">文件柜系列</a> <a href="/gengyigui">更衣柜系列</a> <a href="/mijijia">密集架系列</a> <a href="/huodonggui">活动柜系列</a> <a href="/baoxiangui">保险柜系列</a></li>
                         <li><a class="first">关于花都</a> <a href="/about">关于花都</a> <a href="/about#gcsj">工厂实景</a> <a href="/about#zzry">资质荣誉</a> <a href="/zhaopin">人才招聘</a> <a href="/zsjm">代理合作</a></li>
-                        <li><a class="first">我们的客户</a> <a href="/wenjianguicaigou">单位采购</a>  <a href="/wenjianguidaijiagong">OEM/ODM</a> <a href="/wenjianguichukou">外贸公司</a></li>
+                        <li><a class="first">我们的客户</a> <a href="/wenjianguicaigou">单位采购</a>  <a href="/wenjianguidingzhi">招投标支持</a> <a href="/wenjianguidaijiagong">OEM/ODM</a> <a href="/wenjianguichukou">外贸公司</a></li>
                     </ul>
                 </div>
                 <div class="right">
