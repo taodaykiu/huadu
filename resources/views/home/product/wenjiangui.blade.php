@@ -152,12 +152,12 @@
 
                                     <div class="product-list" data-id="{{ $v->id }}" id="tid-{{ $v->id }}">
                                         <ul>
-                                            @foreach($v['product'] as $v)
+                                            @foreach($v['product'] as $vi)
                                             <li>
-                                                <a href="/product/{{ $v['id'] }}" target="black">
-                                                    <img src="/uploads/{{ $v['images'][0] }}"
-                                                         alt="{{ $v['title'] }}" title="{{ $v['title'] }}">
-                                                    <p>{{ $v['title'] }}</p>
+                                                <a href="/product/{{ $vi['id'] }}" target="black">
+                                                    <img src="/uploads/{{ $vi['images'][0] }}"
+                                                         alt="{{ $vi['title'] }}" title="{{ $vi['title'] }}">
+                                                    <p>{{ $vi['title'] }}</p>
                                                 </a>
                                             </li>
                                             @endforeach

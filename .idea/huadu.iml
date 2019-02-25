@@ -103,5 +103,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="diancan" />
+    <orderEntry type="module" module-name="gtsl" />
   </component>
 </module>

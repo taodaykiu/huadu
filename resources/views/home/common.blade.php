@@ -102,7 +102,7 @@
 </div>
 
 <div class="chat-widget-box" style="display:none">
-    <div class="title"><img src="/home/static/images/logo_min.png"/><span>花都集团</span></div>
+    <div class="title"><img src="{{ $sys->logo }}"/><span>{{ $sys->title }}</span></div>
     <div class="content">
         <h4>花都集团长沙销售部竭诚为您服务</h4>
         <p class="p2"><img src="/home/static/images/dt.jpg"/><span>点击咨询</span></p>

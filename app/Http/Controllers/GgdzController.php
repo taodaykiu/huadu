@@ -10,6 +10,7 @@ namespace App\Http\Controllers;
 
 
 use App\Ggdz;
+use Jenssegers\Agent\Facades\Agent;
 
 class GgdzController extends Controller
 {
@@ -17,6 +18,11 @@ class GgdzController extends Controller
     {
 
         $list = Ggdz::get();
+        if (Agent::isMobile()) {
+
+            return view('wap.ggdz.index',compact('list'));
+
+        }
         return view('home.ggdz.index',compact('list'));
     }
 }

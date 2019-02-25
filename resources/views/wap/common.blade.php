@@ -40,7 +40,7 @@
 
 
 </head>
-<body class="home-page">
+<body class="@yield('body')">
 
 <div class="mdl-layout__container">
     <div class="mdl-layout mdl-js-layout">
@@ -48,7 +48,7 @@
         <header class="header-box">
             <div class="wrap flex">
                 <!-- logo -->
-                <a class="header-logo" href="/"><img src="/wap/static/images/logo_min.png"/></a>
+                <a class="header-logo" href="/"><img src="/uploads/{{ $sys->logo }}"/></a>
                 <!-- menu -->
                 <ul class="flex">
                     <li><a href="/wenjiangui" class="link  ">文件柜</a></li>
@@ -65,7 +65,6 @@
                 <li class="mdl-menu__item"><a href="/wenjiangui">文件柜</a></li>
                 <li class="mdl-menu__item"><a href="/baoxiangui">保险柜</a></li>
                 <li class="mdl-menu__item"><a href="/tushuguanjiaju">图书馆家具</a></li>
-                <li class="mdl-menu__item"><a href="/buduiyingju">部队营具</a></li>
                 <li class="mdl-menu__item"><a href="/huojia">货架</a></li>
                 <li class="mdl-menu__item"><a href="/dianzibaomigui">保密柜</a></li>
                 <li class="mdl-menu__item"><a href="/gengyigui">更衣柜</a></li>

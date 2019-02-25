@@ -8,7 +8,7 @@
 
 
     <script src="/home/static/js/module.js"></script>
- 
+
 
 
     <div class="container-fluid">
@@ -293,7 +293,7 @@
                                             <img src="/uploads/{{ $v->thumb }}" alt="{{ $v->title }}？" title="{{ $v->title }}？">
                                         </div>
                                         <div class="cr">
-                                            <h4>{{ $v->title }}？</h4>
+                                            <h4>{{ $v->title }}</h4>
                                             <p>{{ $v->desc }}</p>
                                             <a href="/news/{{ $v->id }}">查看详情</a>
                                         </div>

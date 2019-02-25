@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../diancan/.idea/diancan.iml" filepath="$PROJECT_DIR$/../diancan/.idea/diancan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../gtsl/.idea/gtsl.iml" filepath="$PROJECT_DIR$/../gtsl/.idea/gtsl.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/huadu.iml" filepath="$PROJECT_DIR$/.idea/huadu.iml" />
     </modules>
   </component>

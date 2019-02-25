@@ -139,6 +139,7 @@ class SysController extends Controller
         $form->text('gs', '公司');
         $form->text('bah', '备案号');
         $form->text('dtlj', '百度商桥动态链接');
+        $form->text('address', '公司地址');
 
         return $form;
     }

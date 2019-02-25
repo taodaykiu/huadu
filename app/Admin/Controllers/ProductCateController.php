@@ -95,6 +95,29 @@ class ProductCateController extends Controller
         $grid->actions(function ($actions) {
             $actions->disableView();
         });
+        $grid->filter(function($filter){
+            $list =  Cate::wherePid(0)->get();
+
+            foreach ($list as $v){
+                if($v->type == 1) {
+                    $lists[$v->id] = $v->name.'--普通分类';
+                } else {
+                    $lists[$v->id] = $v->name.'--专题分类';
+                }
+
+            }
+            // 去掉默认的id过滤器
+            $filter->disableIdFilter();
+
+            // 在这里添加字段过滤器
+            $filter->like('name', '名称');
+            $filter->equal('type','类型')->radio([
+                1   => '普通分类',
+                2    => '专题分类',
+            ]);
+            $filter->equal('pid','上级分类')->select($lists);
+
+        });
         return $grid;
     }
 

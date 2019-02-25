@@ -31,6 +31,7 @@ Route::get('/zhinengmijigui', 'ProductController@zhinengmijigui');
 Route::get('/dangangui', 'ProductController@dangangui');
 Route::get('/huodongui', 'ProductController@huodongui');
 Route::get('/wenjianguicaigou', 'ProductController@wenjianguicaigou');
+Route::get('/Product/MobileQueryList', 'ProductController@MobileQueryList');
 
 
 

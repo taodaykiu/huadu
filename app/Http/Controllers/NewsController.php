@@ -12,6 +12,7 @@ namespace App\Http\Controllers;
 use App\News;
 use App\Product;
 use Illuminate\Http\Request;
+use Jenssegers\Agent\Facades\Agent;
 
 class NewsController extends Controller
 {
@@ -19,6 +20,10 @@ class NewsController extends Controller
     {
         $active = 1;
         $list = News::whereType(1)->orderBy('created_at','desc')->paginate(10);
+        if (Agent::isMobile()) {
+
+            return view('wap.news.index',compact('active','list'));
+        }
         return view('home.news.index',compact('active','list'));
     }
 
@@ -49,6 +54,11 @@ class NewsController extends Controller
         $likes = News::whereNotIn('id',[$request->id])->orderBy('created_at','desc')->limit(6)->get();
         //猜你想要了解
         $wants = Product::orderBy('created_at','desc')->limit(6)->get();
+
+        if (Agent::isMobile()) {
+
+            return view('wap.news.data',compact('data','prev_article','next_article','likes','wants'));
+        }
 
         return view('home.news.data',compact('data','prev_article','next_article','likes','wants'));
     }

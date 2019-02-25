@@ -100,7 +100,16 @@ class CaseController extends Controller
         $grid->actions(function ($actions) {
             $actions->disableView();
         });
+        $grid->filter(function($filter){
 
+            // 去掉默认的id过滤器
+            $filter->disableIdFilter();
+
+            // 在这里添加字段过滤器
+            $filter->like('title', '标题');
+
+            $filter->equal('cate_id','分类')->select('/admin/api/getcasecate');
+        });
         return $grid;
     }
 

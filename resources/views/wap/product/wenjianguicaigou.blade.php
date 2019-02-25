@@ -1,4 +1,4 @@
-@extends('home.common')
+@extends('wap.common')
 
 @section('title', '河南办公家具厂家_中国27年钢制办公家具品牌-花都钢木办公家具')
 @section('body', 'dwcg-page')

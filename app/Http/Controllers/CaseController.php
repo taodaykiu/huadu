@@ -13,10 +13,11 @@ use App\CaseCate;
 use App\Cases;
 use App\Product;
 use Illuminate\Http\Request;
+use Jenssegers\Agent\Facades\Agent;
 
 class CaseController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         //顶部案例
         $top = Cases::OrderBy('created_at','desc')->limit(6)->get();
@@ -30,6 +31,17 @@ class CaseController extends Controller
 
         //推荐案例
         $tj = Cases::OrderBy('created_at','desc')->where('is_tj',1)->limit(8)->get();
+
+        if (Agent::isMobile()) {
+            if ($request->cate_id=='') {
+                $list =  Cases::OrderBy('created_at','desc')->get();
+            } else {
+                $list =  Cases::where('cate_id', $request->cate_id)->OrderBy('created_at','desc')->get();
+            }
+
+
+            return view('wap.case.index',compact('top','cate1','cate2','list','tj'));
+        }
 
         return view('home.case.index',compact('top','cate1','cate2','list','tj'));
     }
@@ -48,6 +60,9 @@ class CaseController extends Controller
         $likes = Cases::whereNotIn('id',[$request->id])->orderBy('created_at','desc')->limit(6)->get();
 
 
+        if (Agent::isMobile()) {
+            return view('wap.case.data',compact('data','prev_article','next_article','likes'));
+        }
 
         return view('home.case.data',compact('data','prev_article','next_article','likes'));
     }

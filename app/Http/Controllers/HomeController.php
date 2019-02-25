@@ -61,6 +61,12 @@ class HomeController extends Controller
         $gszh = AboutPage::whereType(1)->first();
         //创始人
         $csr = AboutPage::whereType(2)->first();
+        if (Agent::isMobile()) {
+
+            return view('wap.index.about',compact('gcsj','scsl','ryzz','gszh','csr'));
+
+        }
+
         return view('home.index.about',compact('gcsj','scsl','ryzz','gszh','csr'));
     }
 
@@ -73,6 +79,11 @@ class HomeController extends Controller
 
     public function zsjm()
     {
+        if (Agent::isMobile()) {
+
+            return view('wap.index.zsjm');
+
+        }
         return view('home.index.zsjm');
     }
     public function zhaopin()

@@ -5,7 +5,7 @@
             <div class="flex">
                 <div class="left" style="width:60%;">
                     <h3><span class="cn">花都</span><span class="en">HUADU</span></h3>
-                    <p class="address"><i class="fa fa-map-marker" aria-hidden="true"></i>总部：中国·河南·洛阳市<br/>　　　伊滨区花都国际园<br/><i class="fa fa-map-marker" aria-hidden="true"></i>全国：各地均有服务商<br/>电话：400-6668-369</p>
+                    <p class="address"><i class="fa fa-map-marker" aria-hidden="true"></i>总部：{{ $sys->address }}　　<br/><i class="fa fa-map-marker" aria-hidden="true"></i>全国：各地均有服务商<br/>电话：400-6668-369</p>
                 </div>
                 <div class="right" style="width:40%; padding:10px 20px">
                     <div class="qrcode">
@@ -28,7 +28,6 @@
             </ul>
             <ul class="flex" style="justify-content:center; padding-top:10px;">
                 <li><a href="/zsjm">代理合作</a></li>
-                <li><a href="/rczp">人才招聘</a></li>
             </ul>
         </div>
         <div class="mdl-cell mdl-cell--12-col r3">

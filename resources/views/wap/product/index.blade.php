@@ -1,442 +1,422 @@
-@extends('home.common')
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-transform ">
+    <meta name="applicable-device" content="mobile">
+    <meta name="renderer" content="webkit">
 
-@section('title', '档案柜_移动档案柜_手摇档案柜_中国钢柜27年生产厂家-花都集团')
-@section('body', 'product-page')
+    <title>@yield('title')</title>
 
 
-@section('content')
+    <meta name="keywords" content="{{ $sys->keywords }}"/>
+    <meta name="description" content="{{ $sys->desc }}"/>
+
+    <link href="/favicon.ico" rel="icon" type="image/x-icon"/>
+
+    <script src="/wap/static/js/jquery-lite.js"></script>
 
 
-    <link href="/home/static/css/product.min.css" rel="stylesheet" type="text/css" />
+    <link href="/wap/static/css/material.css" rel="stylesheet"/>
 
-    <div class="container-fluid">
+    <script src="/wap/static/js/material.js"></script>
 
-        <div class="container">
-            <div class="big-title">
-                <p class="cn">
-                    <span>产品专题</span>
-                </p>
-                <p class="en">
-                    <span>PRODUCT TOPIC</span>
-                </p>
+
+    <link href="/wap/static/css/swiper.css" rel="stylesheet"/>
+
+    <script src="/wap/static/js/swiper.js"></script>
+
+
+    <link href="/wap/static/css/mobile.css" rel="stylesheet"/>
+
+    <script src="/wap/static/js/mobile.js"></script>
+
+
+    <link href="/wap/static/css/iconfont.css" rel="stylesheet" type="text/css"/>
+    <link href="/wap/static/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+
+    <script src="/wap/static/js/iscroll-probe-min.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+
+        //获取数据
+        function loadProductList(catId, callback) {
+          $("#loading-box").fadeIn('fast');
+          $.get({
+            dataType: 'json',
+            url: '/Product/MobileQueryList',
+            data: {catId: catId},
+            success: function (json) {
+              $("#loading-box").fadeOut('fast');
+              if (json.isok) {
+                $(".product-list-box").html(json.html);
+              }
+              callback && callback(json);
+            },
+            error: function (e) {
+              $("#loading-box").fadeOut('fast');
+              callback && callback({isok: false, error: e});
+            }
+          });
+        }
+
+        //滚动
+        function refreshScrollNav() {
+
+          //当前位置是否第一个可见，不是则滚动
+          var navItemLeft = $('.cat-nav-wrap li.active').position().left;
+          var navScrollLeft = $('.cat-nav-wrap').scrollLeft();
+
+          if (navItemLeft - navScrollLeft > 50) {
+            $('.cat-nav-wrap').animate({scrollLeft: (navItemLeft - 50) + 'px'}, 'fast');
+          } else {
+            $('.cat-nav-wrap').animate({scrollLeft: (navItemLeft - 100) + 'px'}, 'fast');
+          }
+
+          //当前位置是否第一个可见，不是则滚动
+          var $subCatTab = $(".sub-cat.active");
+          var subNavItemLeft = $subCatTab.find('.sub-cat-nav-wrap li.active').position().left;
+          var subNavScrollLeft = $subCatTab.find('.sub-cat-nav-wrap').scrollLeft();
+
+          if (subNavItemLeft - subNavScrollLeft > 50) {
+            $subCatTab.find('.sub-cat-nav-wrap').animate({scrollLeft: (subNavItemLeft - 50) + 'px'}, 'fast');
+          } else {
+            $subCatTab.find('.sub-cat-nav-wrap').animate({scrollLeft: (subNavItemLeft - 100) + 'px'}, 'fast');
+          }
+
+
+          $subCatTab.find(".sub-cat-nav-wrap").each(function (index, ele) {
+            $(this).scrollText(50, 1000, 2000);
+          });
+        }
+
+        //初始化一次滚动
+        refreshScrollNav();
+
+        //点击子系列
+        $(".sub-cat-nav").on("click", ".item a", function (e) {
+
+          var catId = $(this).data('cat-id');
+          $(this).closest('.sub-cat-nav').find('.item').removeClass('active');
+          $(this).closest('.item').addClass('active');
+
+          loadProductList(catId, function () {
+            refreshScrollNav();
+          });
+        });
+
+        //切换时
+        $('.cat-nav-wrap').on('shown.bs.tab', 'li a', function (e) {
+
+          var catId = $(this).data('cat-id');
+
+          // //查找激活的子选项
+          // var subNav = $($(this).attr('href')).find('.sub-cat-nav');
+          // if (subNav.length > 0 && subNav.find('li.active').length == 0) {
+          //   var firstActive = subNav.find('li:first').addClass('active');
+          //   catId = firstActive.find('a').data('cat-id');
+          // }
+
+          loadProductList(catId, function () {
+            refreshScrollNav();
+          });
+        });
+
+        //显示更多
+        $('.product-list-box').on('click', '.show-more-btn button', function (e) {
+
+          var hides = $('.product-list-box .cat-list').find('.item-wrap.hide');
+          var count = hides.length;
+
+          if (count > 0) {
+            hides.slice(0, 16).each(function () {
+
+              var img = $(this).find('img');
+
+              var src = img.data('original');
+              img.attr('src', src);
+
+              $(this).removeClass('hide');
+            });
+          }
+          if (count < 16) {
+            $(this).closest('.show-more-btn').remove();
+          }
+        });
+      });
+    </script>
+
+
+</head>
+<body class="ganggui-page">
+
+<div class="mdl-layout__container">
+    <div class="mdl-layout mdl-js-layout">
+
+        <header class="header-box">
+            <div class="wrap flex">
+                <!-- logo -->
+                <a class="header-logo" href="/"><img src="/uploads/{{$sys->logo}}"/></a>
+                <!-- menu -->
+                <ul class="flex">
+                    <li><a href="/wenjiangui" class="link  ">文件柜</a></li>
+                    <li><a href="/mijijia" class="link  ">密集架</a></li>
+                    <li><a href="/baoxiangui" class="link  ">保险柜</a></li>
+                    <li><a href="/about" class="link  ">我们</a></li>
+                </ul>
+                <button class="mdl-button mdl-js-button mdl-button--icon" id="header-menu-top-left">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
             </div>
-        </div>
-        <div class="container">
-            <div class="topic-list">
-                @foreach($xilie as $v)
-                <div class="topic">
-                    <a href="/{{ $v->url }}" class="box">
-                        <div class="text">
-                            <h3 class="title">
-                                {{ $v->name }}专题
-                            </h3>
-                            <p>{{ $v->desc }}</p>
-                            <p class="open">点击查看</p>
-                        </div>
-                        <div class="img">
-                            <img src="/uploads/{{ $v->image }}" />
-                        </div>
-                    </a>
+            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                for="header-menu-top-left">
+                <li class="mdl-menu__item"><a href="/wenjiangui">文件柜</a></li>
+                <li class="mdl-menu__item"><a href="/baoxiangui">保险柜</a></li>
+                <li class="mdl-menu__item"><a href="/tushuguanjiaju">图书馆家具</a></li>
+                <li class="mdl-menu__item"><a href="/huojia">货架</a></li>
+                <li class="mdl-menu__item"><a href="/dianzibaomigui">保密柜</a></li>
+                <li class="mdl-menu__item"><a href="/gengyigui">更衣柜</a></li>
+                <li class="mdl-menu__item" style="display:none;"><a href="/ggdz">工程定制</a></li>
+                <li class="mdl-menu__item"><a href="/case">工程案例</a></li>
+                <li disabled class="mdl-menu__item"><a href="/news">企业新闻</a></li>
+                <li class="mdl-menu__item" style="display:none;"><a href="/contact">联系花都</a></li>
+                <li class="mdl-menu__item"><a href="/about">走进花都</a></li>
+            </ul>
+
+
+            <div class="line"></div>
+            <div class="flex cat-nav-wrap">
+                <ul class="cat-nav">
+                    @foreach($list as $k=>$v)
+
+                        <li class="item @if($v['id']==$getid) active @endif">
+                            <a href="#sub-cat-{{ $v['id'] }}" data-cat-id="{{ $v['id'] }}" data-toggle="tab">
+                                <span>{{ $v['name'] }}</span>
+                            </a>
+                        </li>
+                    @endforeach
+                </ul>
+            </div>
+            <div class="line"></div>
+            <!--子系列-->
+            <div class="tab-content">
+                @foreach($list as $k=>$v)
+                <div class="tab-pane sub-cat @if($v['id']==$getid) active @endif" id="sub-cat-{{ $v['id'] }}">
+
+                    <div class="flex sub-cat-nav-wrap">
+                        <ul class="sub-cat-nav">
+                            <li class="item"><a href="javascript:void(0)" data-cat-id=1>全部</a></li>
+                            @foreach($v['list'] as $vi)
+                            <li class="item @if($vi['id']==$id) active @endif"><a href="javascript:void(0)" data-cat-id="{{ $vi['id'] }}">{{ $vi['name'] }}</a></li>
+                            @endforeach
+                        </ul>
+                    </div>
 
                 </div>
                 @endforeach
-
-
             </div>
-        </div>
 
-        <div class="container">
-            <div class="big-title">
-                <p class="cn">
-                    <span>产品中心</span>
-                </p>
-                <p class="en">
-                    <span>PRODUCT CENTER</span>
-                </p>
-            </div>
-        </div>
 
-        <div class="row module module-1">
-            <div class="container">
-                <div class="tag-box" style="display:none;">
-                    <div class="tag-item">
-                        <a href="#" class="wrap">电子保密柜</a>
-                    </div>
-                    <div class="tag-item">
-                        <a href="#" class="wrap">档案室密集架</a>
-                    </div>
-                    <div class="tag-item">
-                        <a href="#" class="wrap">铁皮更衣柜</a>
-                    </div>
-                    <div class="tag-item">
-                        <a href="#" class="wrap">矮柜</a>
-                    </div>
-                    <div class="tag-item">
-                        <a href="#" class="wrap">器械柜</a>
-                    </div>
-                    <div class="tag-item">
-                        <a href="#" class="wrap">五节档案柜</a>
-                    </div>
-                    <div class="tag-item">
-                        <a href="#" class="wrap">财务凭证柜</a>
-                    </div>
-                    <div class="tag-item">
-                        <a href="#" class="wrap">薄边双色文件柜</a>
-                    </div>
-                    <div class="tag-item">
-                        <a href="#" class="wrap">移门文件柜</a>
-                    </div>
-                    <div class="tag-item">
-                        <a href="#" class="wrap">底图柜</a>
-                    </div>
-                    <div class="tag-item">
-                        <a href="#" class="wrap">期刊架</a>
-                    </div>
-                    <div class="tag-item">
-                        <a href="#" class="wrap">抽屉式文件柜</a>
-                    </div>
-                    <div class="tag-item">
-                        <a href="#" class="wrap">快劳柜</a>
-                    </div>
-                    <div class="tag-item">
-                        <a href="#" class="wrap">底图密集架</a>
-                    </div>
-                    <div class="tag-item">
-                        <a href="#" class="wrap">图书馆书架</a>
-                    </div>
-                    <div class="tag-item">
-                        <a href="#" class="wrap">校用家具</a>
-                    </div>
-                    <div class="tag-item">
-                        <a href="#" class="wrap">部队营具</a>
-                    </div>
-                    <div class="tag-item">
-                        <a href="#" class="wrap">密集架价格</a>
-                    </div>
-                    <div class="tag-item">
-                        <a href="#" class="wrap">文件柜专题</a>
-                    </div>
+        </header>
 
+        <main id="main" class="mdl-layout__content">
+            <div class="page-content">
+
+
+                <div class="panel-box" style="height:4px; background-color:transparent; margin:4px 0;">
+                    <div id="loading-box" style="display:none;"
+                         class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
                 </div>
 
-                <div class="cat-nav-box" id="cat-nav-box">
-                    <ul class="nav" id="top-cat-nav">
-                        @foreach($list as $v)
-                        <li class="cat-item">
-
-                            <a href="#cat-pos-{{ $v['id'] }}" title="{{ $v['name'] }}" data-cat-id="{{ $v['id'] }}">{{ $v['name'] }}<i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                            <ul class="sub-cats">
-                                @foreach($v['list'] as $vi)
-                                <li>
-                                    <a title="{{ $vi['name'] }}" href="#cat-pos-{{ $vi['pid'] }}" data-cat-id="{{ $vi['id'] }}">{{ $vi['name'] }}</a>
-                                </li>
-                                @endforeach
-                            </ul>
-
-                        </li>
-                        @endforeach
-
-                    </ul>
-                    <div class="space"></div>
-                </div>
-
-                <div class="cat-product-box">
-                    @foreach($list as $v)
-                    <div class="cat-title" id="cat-pos-{{ $v['id']}}">
-                        <p>{{ $v['name'] }}</p>
-                    </div>
-                    <ul class="sub-cat-nav">
-                        <li class="active in">
-                            <a href="#sub-cat-{{ $v['id'] }}" class="item-box" data-toggle="tab">全部</a>
-                        </li>
-                        @foreach($v['list'] as $vi)
-                        <li class="">
-                            <a title="{{ $vi['name'] }}" href="#sub-cat-{{ $vi['id'] }}" class="item-box" data-toggle="tab">{{ $vi['name'] }}</a>
-                        </li>
-                        @endforeach
-                    </ul>
-                    <div class="sub-cat-product tab-content">
-
-                        <div class="tab-pane active in" id="sub-cat-1">
-                            <div class="cat-product">
-                                @foreach($v['all'] as $vii)
-                                    <div class="wrap">
-                                        <a href="/product/{{ $vii['id'] }}" title="HDW-AB02A对开通玻矮柜" class="item-box">
-                                            <div class="img">
-                                                <img alt="{{ $vii['title'] }}" src="/uploads/{{ $vii['images'][0] }}" />
-                                            </div>
-                                            <div class="text">
-                                                <p>{{ $vii['title'] }}</p>
-                                                <p>{{ $vii['gg'] }}</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                @endforeach
-                                <div class="more-btn-wrap">
-                                    <a href="javascript:void(0)" class="more-btn">查看更多<i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
-                                </div>
-
-                            </div>
+                <div class="panel-box product-list-box" style="margin-top:0;">
+                    <div class="cat-list">
+                        @foreach($lists as $v)
+                        <div class="item-wrap">
+                            <a href="/product/{{ $v->id }}" class="item">
+                                <img title="{{ $v->title }}" src="/uploads/{{ $v->images[0] }}"/>
+                                <p class="name">{{ $v->title }}</p>
+                            </a>
                         </div>
-                        @foreach($v['list'] as $vi)
+                        @endforeach
 
-
-
-                                <div class="tab-pane" id="sub-cat-{{ $vi['id'] }}">
-                                    <div class="cat-product">
-                                        @foreach($vi['product'] as $vii)
-                                        <div class="wrap">
-                                            <a href="/product/{{ $vii['id'] }}" title="HDW-AB02A对开通玻矮柜" class="item-box">
-                                                <div class="img">
-                                                    <img alt="{{ $vii['title'] }}" src="/uploads/{{ $vii['images'][0] }}" />
-                                                </div>
-                                                <div class="text">
-                                                    <p>{{ $vii['title'] }}</p>
-                                                    <p>{{ $vii['gg'] }}</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        @endforeach
-                                        <div class="more-btn-wrap">
-                                            <a href="javascript:void(0)" class="more-btn">查看更多<i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            @endforeach
                     </div>
-                    @endforeach
+                    <div class="show-more-btn">
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                            显示更多
+                        </button>
+                    </div>
+
+                </div>
+                <div class="panel-box" style="height:4px; background-color:transparent; margin:4px 0;">
+                    <div id="loading-box" style="display:none;"
+                         class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
                 </div>
 
+                @include('wap.right')
             </div>
-        </div>
+        </main>
+
+
     </div>
-    <script>
-        jQuery(document).ready(function ($) {
-
-            $('body').scrollspy({ target: '#cat-nav-box', offset:40 });
-
-            $("#top-cat-nav").width($("#top-cat-nav").innerWidth());
-            var startTop = $('.cat-nav-box').offset().top;
-            $(document).on("scroll", function (e) {
-
-                var top = $(this).scrollTop();
-
-                if (top > startTop) {
-                    $("#top-cat-nav").addClass("fixed");
-                } else {
-                    $("#top-cat-nav").removeClass("fixed");
-                }
-
-            }).trigger('scroll');
+</div>
 
 
-            //加载更多
-            $(".more-btn-wrap").on("click", function (e) {
+<div class="widget-fixed-container widget-contact">
+    <button class="mdl-button mdl-js-button mdl-button--fab sq-call mdl-js-ripple-effect mdl-button--colored">
+        <i class="fa fa-weixin" aria-hidden="true"></i>
+    </button>
+</div>
 
-                var hides = $(this).closest(".cat-product").find(".hide-wrap:lt(16)");
+<div class="widget-fixed-container free-call-box" style="display:none;">
+    <div class="bk"></div>
+    <div class="dialog">
+        <div class="form-group">
+            <label>输入您的电话</label>
+            <input type="tel" value=""/>
+        </div>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">回拨</button>
+    </div>
+</div>
 
-                hides.removeClass("hide-wrap");
+<script>
+  jQuery(document).ready(function ($) {
 
-                if ($(this).closest(".cat-product").find(".hide-wrap").length == 0) {
-                    $(this).fadeOut('fast');
-                }
+    //滚动监听
+    var $main = $("#main");
+    var $contact = $(".widget-contact");
+    var $pageContent = $main.find('.page-content');
 
-            });
+    $main.on("scroll", $.throttle(300, false, function () {
 
+      var st = $main.scrollTop();
+      var bt = $pageContent.height() - 800;
 
-            //导航处理
-            $("#top-cat-nav").on("mouseenter", ".cat-item", function (e) {
+      if (st > bt) {
+        $contact.fadeOut();
+      } else {
+        $contact.fadeIn();
+      }
+    }, false));
 
-                $(this).find("ul").stop().slideDown('fast');
+    //如果底部有fixed-footer-box则移动咨询按钮
+    if ($(".fixed-footer-box").length > 0) {
 
-            }).on("mouseleave", ".cat-item", function (e) {
+      var moveTop = $(".fixed-footer-box").height() - 10;
 
-                $(this).find("ul").stop().slideUp('fast');
+      $(".widget-contact button").animate({bottom: moveTop + 'px'}, 'fast');
 
-            }).on("click", ".cat-item a", function (e) {
-                e.preventDefault();
-                $(this).closest(".sub-cats").hide();
-                navTo(this);
-            });
-
-
-            function navTo(a) {
-                try {
-                    var scrollTop = $($(a).attr("href")).offset().top-40;
-                    $("html,body").animate({ scrollTop: scrollTop }, 500);
-
-                    var sub_cat_id = $(a).data('cat-id');
-                    if (sub_cat_id) {
-                        $("a[href='#sub-cat-" + sub_cat_id+"']").tab("show");
-                    }
-                } catch (e) {
-                    console.log(e);
-                }
-
-            }
-
-            //初始化
-
-            if (window.location.hash) {
-                $("#cat-nav-box").find("a[href='" + window.location.hash + "']").click();
-            }
-
+      $(".fixed-footer-box").on('click', '.close-btn', function () {
+        $(".widget-contact button").animate({bottom: '0px'}, 'fast');
+        $(".fixed-footer-box").remove();
+      });
+    }
 
 
+    //修改客服为打开聊天窗口
+    $("body").on('click', '.sq-call', function (e) {
+
+      window.open("后台做动态客服链接");
+      //window.location.href = "https://p.qiao.baidu.com/cps/chat?siteId=2416525&userId=6027069"
+    }).on('click', '.free-call', function (e) {
+
+      e.preventDefault();
+
+      function hideDialog() {
+        $(".free-call-box").fadeOut('fast');
+        $(".free-call-box .bk").off('click');
+        $(".free-call-box button").off('click');
+      }
+
+      $(".free-call-box").fadeIn('fast');
+
+      $(".free-call-box").one('click', '.bk', function (e) {
+        hideDialog();
+      });
+
+      $(".free-call-box").one('click', 'button', function (e) {
+
+        //免费回拨
+        var phone = $(".free-call-box input").val();
+
+        $.getJSON('/WeiXin/SendCallBack', {phone: phone}, function (json) {
+          if (json.isok) {
+            alert('请稍等，我们的业务人员将马上与您联系');
+            hideDialog();
+          } else {
+            alert(json.error);
+          }
         });
-    </script>
-    <script>
-        //公共代码
-        jQuery(document).ready(function ($) {
+      });
+    });
 
-            //初始化轮播效果
-            $(".swiper-container").each(function (index, element) {
-
-                if ($(this).data("swiper-auto-disabled")) {
-                    return;
-                }
-
-                var $this = $(element);
-
-                var default_params = {
-                    pagination: null,
-                    paginationClickable: true,
-                    autoplay: 2000,
-                    effect: "fade",
-                    autoplayDisableOnInteraction: false,
-                    touchMoveStopPropagation: true,
-                    touchReleaseOnEdges: false,
-                    speed: 600,
-                    loop: true,
-                    prevButton: null,
-                    slidesPerColumn:1,
-                    slidesPerView: 1,
-                    nextButton: null,
-                    spaceBetween: 0,
-                    roundLengths: false,
-
-                };
+  });
+</script>
 
 
-                for (var item in default_params) {
-                    var v = $this.data(item.toLowerCase());
-                    if (typeof v !== 'undefined') {
-                        default_params[item] = v;
-                    }
-                }
+<script>
+  //公共代码
+  jQuery(document).ready(function ($) {
 
-                $this.data("swiper", new Swiper($this[0], default_params));
+    //初始化轮播效果
+    $(".swiper-container").each(function (index, element) {
 
-                if (!$this.data('mousestop')) {
-                    $this.on("mouseenter", function (e) {
-                        $this.data("swiper").stopAutoplay();
-                    }).on("mouseleave", function (e) {
-                        $this.data("swiper").startAutoplay();
-                    });
-                }
+      if ($(this).data("swiper-auto-disabled")) {
+        return;
+      }
+
+      var $this = $(element);
+
+      var default_params = {
+        pagination: null,
+        paginationClickable: true,
+        autoplay: 2000,
+        effect: "fade",
+        autoplayDisableOnInteraction: false,
+        touchMoveStopPropagation: true,
+        touchReleaseOnEdges: false,
+        speed: 600,
+        loop: true,
+        direction: 'horizontal',
+        prevButton: null,
+        slidesPerView: 1,
+        nextButton: null,
+        spaceBetween: 0,
+        roundLengths: false,
+
+      };
 
 
-            });
+      for (var item in default_params) {
+        var v = $this.data(item.toLowerCase());
+        if (typeof v !== 'undefined') {
+          default_params[item] = v;
+        }
+      }
 
+      $this.data("swiper", new Swiper($this[0], default_params));
 
-            //初始化鼠标放上去自动显示Tab
-            $("[data-over-show-tab='true']").on("mouseenter", "li", function (e) {
-                $(this).find("a").click();
-            });
-
-
+      if (!$this.data('mousestop')) {
+        $this.on("mouseenter", function (e) {
+          $this.data("swiper").stopAutoplay();
+        }).on("mouseleave", function (e) {
+          $this.data("swiper").startAutoplay();
         });
-    </script>
-
-    <script>
-
-        jQuery(document).ready(function ($) {
-
-            $(".show-all-city-service-btn").click(function (e) {
-                $.dialog.show($('.all-city-service'), 650, 310, function () {
-                    $(this).find(".close-btn").off("click").click(function (e) {
-                        $.dialog.hide();
-                    });
-                });
-            });
-
-            $('.online-box .x2').click(function (e) {
-
-                $.dialog.show($(".free-call-box"), 400, 100, function () {
-
-                    $(this).find(".close-btn").off("click").click(function (e) {
-                        $.dialog.hide();
-                    });
-
-                    $(this).find(".call-tel-btn").off("click").click(function (e) {
-                        lxb.call($(this).closest('form').find('input')[0]);
-                    });
-
-                });
-
-            });
+      }
 
 
-            $('.online-box .x6').click(function () {
-                $('html,body').animate({ scrollTop: 0 }, 'fast');
-            });
-
-            $(window).on("scroll", $.throttle(200, false, function () {
-
-                if ($(window).scrollTop() > 400) {
-                    $('.online-box .x6').fadeIn();
-                } else {
-                    $('.online-box .x6').fadeOut();
-                }
-            }, false));
-
-        });
+    });
 
 
-    </script>
-
-    <script type="text/javascript" async="async" data-lxb-uid="6027069" data-lxb-gid="213299" src="//lxbjs.baidu.com/api/asset/api.js?t= 636860448000000000" charset="utf-8"></script>
-    <script async src="/home/static/js/bridge.js"></script>
-    <script>
-
-        (function ($) {
-
-            function initSignalR(readycallback) {
-                $.getScript('/home/static/js/signalr/jquery.signalR-2.2.2.min.js', function (e) {
-                    $.getScript('/home/static/js/signalr/hubs.js', function (e) {
-                        readycallback(e);
-                    });
-                });
-            }
-
-            //初始化signalR
-            initSignalR(function (e) {
-
-                //QrCode校验
-                var visitorHub = $.connection.visitorHub;
-                visitorHub.client.welcomeVisit = function (msg) {
-                    //console.log(msg+'ProvinceCity');
-                };
-
-                $.connection.hub.start().done(function (e) {
+  });
+</script>
 
 
+<script>
+  // 百度商桥
+</script>
 
-                    visitorHub.server.visitPage("01c045ef-4427-4bfd-83df-28ce2b0f6116","/ganggui");
-                });
-
-
-                //浏览器关闭时
-                window.onbeforeunload = function () {
-                    $.connection.hub.stop();
-                }
-
-
-            });
-
-        })(jQuery);
-
-    </script>
-
-@endsection
+</body>
+</html>

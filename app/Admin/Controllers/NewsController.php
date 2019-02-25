@@ -129,6 +129,28 @@ class NewsController extends Controller
         $grid->actions(function ($actions) {
             $actions->disableView();
         });
+        $grid->filter(function($filter){
+
+            // 去掉默认的id过滤器
+            $filter->disableIdFilter();
+
+            // 在这里添加字段过滤器
+            $filter->like('title', '标题');
+
+            $filter->equal('type','分类')->radio([
+                1 => '公司新闻',
+                2 => '行业新闻',
+                3 => '常见问题',
+                4 => '文件柜资讯',
+                5 => '档案密集架',
+                6 => '更衣柜',
+                7 => '保险柜',
+                8 => '校用家具',
+                9 => '保密文件柜',
+                10 => '智能密集柜',
+                11 => '铁皮档案柜',
+            ]);
+        });
         return $grid;
     }
 

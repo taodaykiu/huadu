@@ -416,48 +416,21 @@
             <div class="panel-box home-guoji-box">
                 <div class="swiper-container swiper-guoji" data-effect="fade" data-roundlengths="true" data-autoplay="3000" data-mousestop="true">
                     <div class="swiper-wrapper">
+                        @foreach(\App\News::whereType(2)->orderBy('created_at','desc')->get() as $v)
                         <div class="swiper-slide">
                             <div class="cl">
-                                <img src="/wap/static/images/636377174648573343.jpg"/>
+                                <img src="/uploads/{{ $v->thumb }}"/>
                             </div>
                             <div class="cr">
-                                <h2>第121届中国进出口商品交易会落下帷幕</h2>
-                                <h2>花都集团千万订单圆满收官</h2>
-                                <p>自2003年起，花都集团已陪伴广交会13个春秋，用优质的产品赢得了国内外客商的喜爱，成为中国钢制家具的一张名片。作为钢制家具的领头者，花都坚持品质，坚持产品研发和革新，以做最好的中国制造为己任</p>
-                                <a href="javascript:void(0)" class="more">
+                                <h2>{{ $v->title }}</h2>
+                                <p>{{ $v->desc }}</p>
+                                <a href="/news/{{ $v->id }}" class="more">
                                     <i class="fa fa-angle-down" aria-hidden="true"></i>
                                 </a>
                             </div>
 
                         </div>
-                        <div class="swiper-slide">
-                            <div class="cl">
-                                <img src="/wap/static/images/636377174653623632.jpg"/>
-                            </div>
-                            <div class="cr">
-                                <h2>花都钢柜走进里约奥运会</h2>
-                                <h2>各大媒体相继报道</h2>
-                                <p>继蚊帐，拔火罐等中国元素后，中国洛阳制造的花都钢制更衣柜、花都办公文件柜再次获里约奥运会各国运动员点赞！里约热内卢是奥运史上首个主办奥运会的南美洲城市，同时也是首个主办奥运会的葡萄牙语城市</p>
-                                <a href="javascript:void(0)" class="more">
-                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                </a>
-                            </div>
-
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="cl">
-                                <img src="/wap/static/images/636377174643433049.jpg"/>
-                            </div>
-                            <div class="cr">
-                                <h2>花都惊艳米兰世博会</h2>
-                                <h2>代言钢制办公家具</h2>
-                                <p>洛阳花都家具集团代表行业率先入选米兰世博，向世界展示了中国钢制办公家具的定制力量。在世霁级的舞台，完成了中国品牌的国际展现，获得了来自世界的喝彩。</p>
-                                <a href="javascript:void(0)" class="more">
-                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                </a>
-                            </div>
-
-                        </div>
+                            @endforeach
                     </div>
                 </div>
             </div>

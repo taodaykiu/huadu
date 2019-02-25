@@ -100,6 +100,20 @@ class ZhuantiController extends Controller
         $grid->actions(function ($actions) {
             $actions->disableView();
         });
+        $grid->filter(function($filter){
+            $list =  Cate::wherePid(0)->whereType(2)->get();
+
+            foreach ($list as $v){
+                $lists[$v->id] = $v->name;
+            }
+            // 去掉默认的id过滤器
+            $filter->disableIdFilter();
+
+            // 在这里添加字段过滤器
+            $filter->like('title', '名称');
+            $filter->equal('level1','分类')->select($lists);
+
+        });
         return $grid;
     }
 

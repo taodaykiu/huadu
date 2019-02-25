@@ -98,6 +98,19 @@ class CaseCateController extends Controller
         $grid->actions(function ($actions) {
             $actions->disableView();
         });
+        $grid->filter(function($filter){
+
+            // 去掉默认的id过滤器
+            $filter->disableIdFilter();
+
+            // 在这里添加字段过滤器
+            $filter->like('name', '名称');
+            $filter->equal('type','类型')->radio([
+                1   => '系列案例',
+                2    => '地区案例',
+                0    => '用户分类',
+            ]);
+        });
         return $grid;
     }
 

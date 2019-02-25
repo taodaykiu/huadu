@@ -1,4 +1,4 @@
-@extends('home.common')
+@extends('wap.common')
 
 @section('title', $data->title.'_花都集团_中国大型货架厂家')
 @section('body', 'product-detail-page')
