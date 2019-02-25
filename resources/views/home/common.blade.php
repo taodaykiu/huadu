@@ -219,8 +219,8 @@
                             花都
                             <span style="letter-spacing:-1px; font-weight:600;">HUADU</span>
                         </p>
-                        <a href="/">www.lyhuadu.com</a>
-                        <p style="font-size:14px; padding-top:10px;letter-spacing:1px;  font-weight:normal; color:#CCCCCC;">地址：中国·河南·市伊滨区花都国际园</p>
+                        <a href="/">{{ $sys->url }}</a>
+                        <p style="font-size:14px; padding-top:10px;letter-spacing:1px;  font-weight:normal; color:#CCCCCC;">地址：{{ $sys->address }}</p>
                     </div>
                     <div class="icons">
                         <a href="javasript:void(0)" class="icon qq-call"><i class="fa fa-qq" aria-hidden="true"></i></a>

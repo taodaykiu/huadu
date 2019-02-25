@@ -19,8 +19,6 @@
       <change afterPath="$PROJECT_DIR$/../gtsl/src/shop/pages/teamqy.wpy" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../gtsl/src/shop/pages/userjifen.wpy" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../gtsl/src/swh/order/list.wpy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diancan/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../diancan/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diancan/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/../diancan/project.config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diancan/src/app.wpy" beforeDir="false" afterPath="$PROJECT_DIR$/../diancan/src/app.wpy" afterDir="false" />
@@ -123,47 +121,8 @@
       <change beforePath="$PROJECT_DIR$/../gtsl/src/shop/pages/ptsuccess.wpy" beforeDir="false" afterPath="$PROJECT_DIR$/../gtsl/src/shop/pages/ptsuccess.wpy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gtsl/src/shop/pages/success.wpy" beforeDir="false" afterPath="$PROJECT_DIR$/../gtsl/src/shop/pages/success.wpy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gtsl/src/utils/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/../gtsl/src/utils/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/huadu.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/huadu.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Admin/Controllers/CaseCateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin/Controllers/CaseCateController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Admin/Controllers/CaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin/Controllers/CaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Admin/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin/Controllers/NewsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Admin/Controllers/ProductCateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin/Controllers/ProductCateController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Admin/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin/Controllers/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Admin/Controllers/SysController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin/Controllers/SysController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Admin/Controllers/ZhuantiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin/Controllers/ZhuantiController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GgdzController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GgdzController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/common.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/common.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/product/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/product/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/product/mijijia.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/product/mijijia.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/product/wenjiangui.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/product/wenjiangui.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/wap/case/data.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/wap/case/data.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/wap/case/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/wap/case/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/wap/common.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/wap/common.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/wap/ggdz/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/wap/ggdz/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/wap/index/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/wap/index/about.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/wap/index/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/wap/index/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/wap/index/zsjm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/wap/index/zsjm.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/wap/news/data.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/wap/news/data.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/wap/news/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/wap/news/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/wap/product/baoxiangui.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/wap/product/baoxiangui.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/wap/product/data.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/wap/product/data.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/wap/product/dianzibaomigui.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/wap/product/dianzibaomigui.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/wap/product/gengyigui.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/wap/product/gengyigui.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/wap/product/huojia.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/wap/product/huojia.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/wap/product/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/wap/product/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/wap/product/mijijia.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/wap/product/mijijia.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/wap/product/tushuguanjiaju.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/wap/product/tushuguanjiaju.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/wap/product/wenjiangui.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/wap/product/wenjiangui.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/wap/product/wenjianguicaigou.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/wap/product/wenjianguicaigou.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/wap/right.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/wap/right.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -185,7 +144,8 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="15" />
-          <entry key="php" value="75" />
+          <entry key="md" value="3" />
+          <entry key="php" value="80" />
           <entry key="wpy" value="1" />
         </counts>
       </usages-collector>
@@ -193,50 +153,33 @@
         <counts>
           <entry key="Blade" value="50" />
           <entry key="HTML" value="15" />
-          <entry key="PHP" value="25" />
+          <entry key="Markdown" value="3" />
+          <entry key="PHP" value="30" />
           <entry key="Vue.js" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="1" />
-          <entry key="php" value="3330" />
+          <entry key="php" value="3353" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Blade" value="2206" />
           <entry key="HTML" value="2" />
-          <entry key="PHP" value="1123" />
+          <entry key="PHP" value="1146" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="611">
-              <caret line="83" column="28" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/wap/common.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/wap/right.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/SysController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+            <state relative-caret-position="492">
+              <caret line="133" column="24" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -301,8 +244,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_25_084433_add_address.php" />
-        <option value="$PROJECT_DIR$/app/Admin/Controllers/SysController.php" />
         <option value="$PROJECT_DIR$/resources/views/wap/product/wenjianguicaigou.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/home/common.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/home/product/wenjiangui.blade.php" />
@@ -352,6 +293,8 @@
         <option value="$USER_HOME$/Downloads/Mob/zsjm.html" />
         <option value="$PROJECT_DIR$/resources/views/wap/index/zsjm.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/wap/right.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_25_152122_add_url.php" />
+        <option value="$PROJECT_DIR$/app/Admin/Controllers/SysController.php" />
       </list>
     </option>
   </component>
@@ -511,64 +454,7 @@
             <path>
               <item name="huadu" type="b2602c69:ProjectViewProjectNode" />
               <item name="huadu" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huadu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huadu" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huadu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huadu" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huadu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huadu" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huadu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huadu" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huadu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huadu" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-              <item name="ggdz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huadu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huadu" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huadu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huadu" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="wap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huadu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huadu" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="wap" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -626,12 +512,12 @@
       <workItem from="1550831566441" duration="1722000" />
       <workItem from="1550887167681" duration="39224000" />
       <workItem from="1550995698216" duration="27169000" />
-      <workItem from="1551054045953" duration="16005000" />
+      <workItem from="1551054045953" duration="16391000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91039000" />
+    <option name="totallyTimeSpent" value="91425000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="83" y="23" width="1698" height="988" extended-state="0" />
@@ -688,68 +574,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/wap/product/tushuguanjiaju.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="93" column="39" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
-          <folding>
-            <element signature="e#1761#1767#1#HTML" expanded="true" />
-            <element signature="e#2586#2592#1#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Mob/huojia.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="78" selection-start-line="78" selection-end-line="231" />
-          <folding>
-            <element signature="n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home/product/mijijia.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="257" column="19" selection-start-line="257" selection-start-column="19" selection-end-line="267" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home/product/huojia.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="99" column="13" lean-forward="true" selection-start-line="99" selection-start-column="13" selection-end-line="123" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/wap/product/huojia.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="62" column="37" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
-          <folding>
-            <element signature="e#777#846#0#HTML" expanded="true" />
-            <element signature="e#1845#1914#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Mob/dianzibaomigui.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="79" column="6" lean-forward="true" selection-start-line="79" selection-start-column="6" selection-end-line="246" />
-          <folding>
-            <element signature="n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#5302#5308#0" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#div#0;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#footer#0;n#div#0;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#footer#0;n#div#0;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#1;n#div#1;n#div#0;n#footer#0;n#div#0;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/home/product/dangangui.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1215,10 +1039,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/wap/right.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="83" column="28" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="28" />
+        <state relative-caret-position="493">
+          <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -1229,10 +1053,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/wap/right.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+        <state relative-caret-position="611">
+          <caret line="83" column="28" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_25_152009_add_url.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_25_152122_add_url.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Yqlj.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_25_084433_add_address.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="28" selection-start-line="17" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/SysController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="133" column="24" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="24" />
         </state>
       </provider>
     </entry>
